@@ -21,20 +21,7 @@ return(
         <div className="flex mx-auto border-white border-2">
           <img src={logo} alt="" className="w-1/4" />
           <HeaderAvatarFrag/>
-
-        {/* <Typography
-          className="font-bold text-3xl -9tracking-wide font-bebasNeue mt-2 cursor-pointer text-center "
-        >
-          The 
-        </Typography>
-        <Typography
-          className="font-black text-5xl tracking-wide font-bebasNeue mx-4 cursor-pointer text-center ">
-          Drag 
-        </Typography>
-        <Typography
-          className="font-bold text-3xl tracking-wide font-bebasNeue mb-2 cursor-pointer text-center ">
-          Cartel
-        </Typography> */}
+          
         </div>
         
         <div className="ml-auto flex gap-1 md:mr-4">
