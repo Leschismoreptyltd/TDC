@@ -1,18 +1,34 @@
+import { useState } from "react"
 import HomePageHeading from "../fragments/HomePageHeading";
 import CustomForm from "../cards/CustomForm";
 import { Typography } from "@material-tailwind/react";
 const JoinTDC = () =>{
+    //Custom Form setup
     const title = "Sign Up";
     const titleMessage = "Nice to meet you! Enter your details to register.";
-    const fieldNames = ["Your Name", "Your Email", "Password", "Profile Picture"]
-    const fieldTypes =["text", "email", "password", "file"];
-    const placeholders=["John/Jane Doe", "name@mail.com", "********", "Select a Profile Picture"]
+    const fieldNames = [
+        "Name:", 
+        "Alias:", 
+        "About You:", 
+        "Email:", 
+        "Cell Number:", 
+        "Instagram Handle:",
+        "TikTok Username:",
+        "Facebook Username:",
+        "Profil Picture:",
+        "Album Pictures:"]
+    const fieldTypes =["text", "text", "text", "email", "phone", "text", "text", "text", "file", "file"];
+    const placeholders=["John/Jane Doe", "Alias", "name@mail.com", "123 456 7890"]
     const customFormObj = {
         fieldNames,
         fieldTypes,
         placeholders
     }
     const heading = "Join TDC";
+
+    const [profilePicture, setProfilePicture] = useState(null);
+    const [albumPictures, setAlbumPictures]  = useState([]);
+
     return(
         <>
             {/* Header */}
@@ -34,7 +50,11 @@ const JoinTDC = () =>{
             <CustomForm 
             formTitle = {title} 
             formMessage = {titleMessage} 
-            customFormObj = {customFormObj}/>
+            customFormObj = {customFormObj}
+            profilePicture = {profilePicture}
+            albumPictures = {albumPictures}
+            setProfilePictures = {setProfilePicture}
+            setAlbumPictures = {setAlbumPictures}/>
 
         </>
     )
