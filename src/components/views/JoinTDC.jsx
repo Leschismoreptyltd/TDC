@@ -1,13 +1,17 @@
 import HomePageHeading from "../fragments/HomePageHeading";
-import {
-    Card,
-    Input,
-    Checkbox,
-    Button,
-    Typography,
-  } from "@material-tailwind/react";
-  const update = true;
+import CustomForm from "../cards/CustomForm";
+import { Typography } from "@material-tailwind/react";
 const JoinTDC = () =>{
+    const title = "Sign Up";
+    const titleMessage = "Nice to meet you! Enter your details to register.";
+    const fieldNames = ["Your Name", "Your Email", "Password", "Profile Picture"]
+    const fieldTypes =["text", "email", "password", "file"];
+    const placeholders=["John/Jane Doe", "name@mail.com", "********", "Select a Profile Picture"]
+    const customFormObj = {
+        fieldNames,
+        fieldTypes,
+        placeholders
+    }
     const heading = "Join TDC";
     return(
         <>
@@ -27,26 +31,10 @@ const JoinTDC = () =>{
             </div>
 
             {/* Card and Form */}
-            <div className="max-w-4xl mx-auto p-4">
-                <form className="flex flex-col gap-6">
-
-                <div className="w-1/2 p-4">
-                    <Typography>
-
-                        Column 1
-
-                    </Typography>
-                </div>
-                <div className="w-1/2 p-4">
-                    <Typography >
-
-                        Column 2
-
-                    </Typography>
-                </div>
-
-                </form>
-            </div>
+            <CustomForm 
+            formTitle = {title} 
+            formMessage = {titleMessage} 
+            customFormObj = {customFormObj}/>
 
         </>
     )
