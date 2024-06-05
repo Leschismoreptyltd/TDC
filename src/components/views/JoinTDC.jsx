@@ -1,11 +1,10 @@
 import { useState } from "react"
 import HomePageHeading from "../fragments/HomePageHeading";
 import CustomForm from "../cards/CustomForm";
-import { Typography } from "@material-tailwind/react";
 const JoinTDC = () =>{
     //Custom Form setup
     const title = "Sign Up";
-    const titleMessage = "Nice to meet you! Enter your details to register.";
+    const titleMessage = "Nice to meet you! Enter your details to register with The Drag Cartel.";
     const fieldNames = [
         "Name:", 
         "Alias:", 
@@ -37,6 +36,7 @@ const JoinTDC = () =>{
             </div>
 
             {/* Form heading */}
+            {/* 
             <div className="text-center">
                 <Typography variant="h4" color="blue-gray">
                     Sign Up
@@ -44,7 +44,7 @@ const JoinTDC = () =>{
                 <Typography color="gray" className="mt-1 font-normal">
                     Nice to meet you! Enter your details to register.
                 </Typography>
-            </div>
+            </div> */}
 
             {/* Card and Form */}
             <CustomForm 
