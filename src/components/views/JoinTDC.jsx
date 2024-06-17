@@ -8,7 +8,6 @@ const JoinTDC = () =>{
     const fieldNames = [
         "Name:", 
         "Alias:", 
-        "About You:", 
         "Email:", 
         "Cell Number:", 
         "Instagram Handle:",
@@ -16,7 +15,7 @@ const JoinTDC = () =>{
         "Facebook Username:",
         "Profil Picture:",
         "Album Pictures:"]
-    const fieldTypes =["text", "text", "text", "email", "phone", "text", "text", "text", "file", "file"];
+    const fieldTypes =["text", "text", "email", "phone", "text", "text", "text", "file", "file"];
     const placeholders=["John/Jane Doe", "Alias", "name@mail.com", "123 456 7890"]
     const customFormObj = {
         fieldNames,
@@ -47,6 +46,8 @@ const JoinTDC = () =>{
             </div> */}
 
             {/* Card and Form */}
+            <div className="w-full">
+
             <CustomForm 
             formTitle = {title} 
             formMessage = {titleMessage} 
@@ -55,6 +56,8 @@ const JoinTDC = () =>{
             albumPictures = {albumPictures}
             setProfilePictures = {setProfilePicture}
             setAlbumPictures = {setAlbumPictures}/>
+
+            </div>
 
         </>
     )
