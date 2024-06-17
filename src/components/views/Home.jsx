@@ -2,7 +2,7 @@ import VideoView from "../fragments/VideoView";
 import VideoDialogCard from "../cards/VideoDialogCard";
 import GigGuideCard from "../cards/GigGuideCard";
 import HomePageHeading from "../fragments/HomePageHeading";
-import tdcBeefcakes from "../../assets/images/gig_guide/tdc_beefcakes.jpg";
+import gig1 from "../../assets/images/gig_guide/tdc_beefcakes.jpg";
 import zero21angelalamore from "../../assets/images/gig_guide/zero21_social_angelalamore.jpg";
 import zero21maxinewild from "../../assets/images/gig_guide/zero21_social_maxinewild.jpg";
 import etcmaxineemogan from "../../assets/images/gig_guide/etc_maxineemogan.jpg";
@@ -15,15 +15,16 @@ import newsImage3 from "../../assets/images/lgbtqia_news/LGBTQ-professionals-fac
 
 const Home = () =>{
 
-    //Temporary Props... I added this comment
+    //Temporary Props...
         //Heading Props...
-    const homeHeading = "Whats Popping At The Drag Cartel";
+    //const homeHeading = "Whats Popping At The Drag Cartel";
+    const homeHeading = "This is a test";
     const gigGuideHeading = "Gig Guide"
 
         //Gig guide Props
     const gigGuide = {
         gigGuideUrlArray : [
-        tdcBeefcakes,
+        gig1,
         zero21angelalamore,
         zero21maxinewild,
         etcmaxineemogan    
