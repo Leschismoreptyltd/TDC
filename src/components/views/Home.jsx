@@ -15,7 +15,7 @@ import newsImage3 from "../../assets/images/lgbtqia_news/LGBTQ-professionals-fac
 
 const Home = () =>{
 
-    //Temporary Props...
+    //Temporary Props... I added this comment
         //Heading Props...
     const homeHeading = "Whats Popping At The Drag Cartel";
     const gigGuideHeading = "Gig Guide"
