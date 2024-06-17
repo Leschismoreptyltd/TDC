@@ -13,15 +13,15 @@ const CustomForm = (props) => {
 return(
     <>
     {/*Form container div */}
-    <div className="flex w-full justify-center">
+    <div className="w-3/5 p-10  border-white border-2 p-4 rounded-xl">
 
       <Card color="transparent" shadow={false}>
         <HomePageHeading heading ={title} size={3}/>
         <Typography color="black" className="mt-1 font-normal">
           {titleMessage}
         </Typography>
-        <div className="flex w-full mobile:block mobile:w-full" >{/*className="flex mx-6 mt-8 mb-2 w-full border-white border-2 p-4 rounded-xl justify-center bg-green-900">*/}
-          <div className="mb-1 w-2/3 gap-6 justify-center bg-inherit mobile:w-full">
+        <div className="flex mobile:block mobile:w-full" >{/*className="flex mx-6 mt-8 mb-2 w-full border-white border-2 p-4 rounded-xl justify-center bg-green-900">*/}
+          <div className="mb-1 w-7/12 gap-6 justify-center bg-inherit mobile:w-full">
             { customFormObj.fieldNames.map((attribute, key) => {
               if (customFormObj.fieldTypes[key] !="file"){
                 return(
@@ -51,7 +51,7 @@ return(
             })}          
           </div>
 
-          <div className="w-1/3 p-4 justify-items-center">
+          <div className="w-5/12 p-4 justify-items-center">
             {customFormObj.fieldNames.map((attribute, key) => {
               if(customFormObj.fieldTypes[key]==="file"){
                 return(

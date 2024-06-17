@@ -46,7 +46,7 @@ const JoinTDC = () =>{
             </div> */}
 
             {/* Card and Form */}
-            <div className="w-full">
+            <div className="flex justify-center rounded-xl">
 
             <CustomForm 
             formTitle = {title} 
