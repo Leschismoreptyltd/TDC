@@ -17,8 +17,7 @@ const Home = () =>{
 
     //Temporary Props...
         //Heading Props...
-    //const homeHeading = "Whats Popping At The Drag Cartel";
-    const homeHeading = "This is a test";
+    const homeHeading = "Whats Popping At The Drag Cartel";
     const gigGuideHeading = "Gig Guide"
 
         //Gig guide Props
