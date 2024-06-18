@@ -13,7 +13,7 @@ const CustomForm = (props) => {
 return(
     <>
     {/*Form container div */}
-    <div className="w-3/5 p-10  border-white border-2 p-4 rounded-xl">
+    <div className="w-3/5 p-1 border-white border-2 rounded-xl mobile:w-full">
 
       <Card color="transparent" shadow={false}>
         <HomePageHeading heading ={title} size={3}/>
@@ -102,18 +102,18 @@ return(
          
           
         </div>
-        <div className="w-1/2 p-4 flex flex-col justify-items-center mobile:w-full">
+        <div className="w-1/2 p-4 flex flex-col justify-items-center mobile:w-full mobile:block">
           <Checkbox
             label={
               <Typography
                 variant="small"
                 color="gray"
-                className="flex items-center font-normal"
+                className="flex items-center font-normal mobile:w-full"
               >
                 I agree the
                 <a
                   href="#"
-                  className="font-medium transition-colors hover:text-gray-900"
+                  className="font-medium transition-colors hover:text-gray-900 mobile:w-full"
                 >
                   &nbsp;Terms and Conditions
                 </a>
