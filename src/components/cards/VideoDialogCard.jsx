@@ -5,7 +5,7 @@ import {
     Typography,
     Button,
   } from "@material-tailwind/react";
-  import { Link } from "react";
+  import { Link } from "react-router-dom";
 
 const VideoDialogCard = (props) =>{
 
@@ -25,7 +25,7 @@ const VideoDialogCard = (props) =>{
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button>Watch Now</Button>
+        <Link to={props.fullEpisodeUrl}><Button>Watch Now</Button></Link>
       </CardFooter>
     </Card>
 
