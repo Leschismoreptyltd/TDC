@@ -1,8 +1,15 @@
+import UnderConstruction from "../common/UnderConstruction";
+
 const AboutUs = () =>{
 
     return(
         <>
-        <h1>This is the AboutUs view</h1>
+        <div className="mobile:my-10">
+
+        <UnderConstruction/>
+
+        </div>
+        
         </>
     )
 }

@@ -1,8 +1,13 @@
+import UnderConstruction from "../common/UnderConstruction";
 const DivaSection = () =>{
 
     return(
         <>
-        <h1>This is the Diva Section view</h1>
+        <div className="moblie:my-10">
+            
+            <UnderConstruction/>
+
+        </div>
         </>
     )
 }
