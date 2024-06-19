@@ -84,11 +84,11 @@ const Home = () =>{
             {/*Video and Dialog*/}
             <div className="m-3 grid grid-cols-2 mobile:grid-cols-1 laptop:grid-cols-2">
             
-                <div className="flex justify-start items-center">
-                    <VideoView url = {videoUrl} width = "85%" height="auto"/>
+                <div className="ml-12 w-3/4 mobile:ml-0 mobile:w-full">
+                    <VideoView url = {videoUrl} width = "" height="auto"/>
                 </div>
 
-                <div className="flex justify-start items-start">
+                <div className="flex items-start">
                     <VideoDialogCard heading = {videoDialogHeading} content = {videoDialogContent}/>
                     </div>            
                 
